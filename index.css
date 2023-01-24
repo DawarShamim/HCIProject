@@ -252,7 +252,8 @@ body {
   color: var(--second-text-color);
 }
 .btn-text2 {
-  padding: 0;
+  border:3px rgb(0, 0, 0);
+  padding-left: 10px;
   background-color: transparent;
   font-size: var(--btn-text-size);
   line-height: 22px;
@@ -262,6 +263,25 @@ body {
   text-align: center;
   display: inline-block;
 }
+
+
+
+.button-sm1,
+.product-actions2 {
+  overflow: hidden;
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.button-sm1 {
+  border-radius: var(--br-lg);
+  border: 1px solid var(--primary-color);
+  display: flex;
+  padding: var(--padding-3xs) var(--padding-sm);
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--primary-color);
+}
+
 .btn-text2,
 .btn-text3,
 .button-md {
@@ -279,7 +299,7 @@ body {
   justify-content: flex-start;
 }
 .btn-text3 {
-  padding: 0;
+  padding: 2px;
   background-color: transparent;
   position: relative;
   font-size: var(--btn-text-size);
@@ -402,6 +422,24 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.fixed-width5 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-md) var(--padding-xs);
+  background-color: rgb(67, 117, 252);
+  border-radius: var(--br-sm);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.col-md-48,
+.fixed-width5,
+.fixed-width2 {
+  display: flex;
+  flex-direction: column;
+}
+
 .col-md-48 {
   width: 329px;
   flex-shrink: 0;
